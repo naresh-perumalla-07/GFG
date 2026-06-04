@@ -5,9 +5,9 @@ class Solution {
             String digit=String.valueOf(i);
             int n=digit.length();
             for(int j=1;j<n-1;j++){
-                int curr=digit.charAt(j);
-                int left=digit.charAt(j-1);
-                int right=digit.charAt(j+1);
+                int curr=digit.charAt(j)-'0';
+                int left=digit.charAt(j-1)-'0';
+                int right=digit.charAt(j+1)-'0';
 
                 if((curr<left && curr<right) || (curr>left && curr>right))cnt++;
             }
