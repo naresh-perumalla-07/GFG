@@ -9,12 +9,13 @@ class Solution {
 
         }
 
-        while(min!=0){
-            int temp=min;
-            min=max%min;
-            max=temp;
+        while(max!=0){
+            int rem=min%max;
+            min=max;
+            max=rem;
+
         }
-        return max;
+        return min;
         
     }
 }
