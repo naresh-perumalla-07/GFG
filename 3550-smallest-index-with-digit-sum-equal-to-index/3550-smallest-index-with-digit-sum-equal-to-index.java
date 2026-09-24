@@ -4,17 +4,16 @@ class Solution {
         if(n==1){
             if(nums[0]==0)return 0;
         }
-        int ans=-1;
+        // int ans=-1;
         for(int i=0;i<n;i++){
             int sum=dSum(nums[i]);
             if(sum==i){
-                ans=i;
-                break;
+                return i;
             }
             
 
         }
-        return ans;
+        return -1;
         
     }
     public int dSum(int n){
