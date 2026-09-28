@@ -1,9 +1,9 @@
 class Solution {
     public int maxDepth(String s) {
         int n=s.length();
-        if(n==1){
-            return s.charAt(0)=='(' ? 1 : 0;
-        }
+        // if(n==1){
+        //     return s.charAt(0)=='(' ? 1 : 0;
+        // }
         int cnt=0;
         int ans=0;
 
