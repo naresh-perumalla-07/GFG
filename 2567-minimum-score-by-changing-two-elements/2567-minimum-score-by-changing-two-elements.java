@@ -1,8 +1,8 @@
 class Solution {
     public int minimizeSum(int[] nums) {
-        Arrays.sort(nums);
 
-        int n = nums.length;
+        Arrays.sort(nums); 
+         int n = nums.length;
 
         int ans = Math.min(
             nums[n - 2] - nums[1],
