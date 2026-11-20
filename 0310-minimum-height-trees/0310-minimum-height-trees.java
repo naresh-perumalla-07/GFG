@@ -1,7 +1,7 @@
 class Solution {
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
         if (n == 1) {
-            return Collections.singletonList(0); // Only one node, return the root
+            return Collections.singletonList(0); 
         }
         
         Map<Integer, List<Integer>> graph = new HashMap<>();
@@ -37,7 +37,7 @@ class Solution {
                             queue.offer(neighbor);
                         }
                     }
-                    graph.remove(leaf); // Optional: Remove leaf node from the graph
+                    graph.remove(leaf); 
                 }
             }
         }
